@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SURVEY FORM</title>
+    <link rel="stylesheet" href="SURVEY.CSS" />
+    <!--GOOGLEFONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bevan&family=Oxygen:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="title">MUSIC SURVEY FORM</h1>
+      <p id="description">Help us know more about your music tastes</p>
+
+      <form action="" id="survey-form">
+        <div class="groupForm">
+          <label id="name-label" for="name">Your name</label><br />
+          <input type="text" id="name" placeholder="Enter yor name" required />
+        </div>
+
+        <div class="groupForm">
+          <label id="email-label" for="email">E-Mail</label><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="groupForm">
+          <label id="number-label" for="number">Your age</label><br />
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter your age"
+            min="13"
+            max="120"
+            required
+          />
+        </div>
+
+        <div class="groupForm">
+          <label for="dropdown">Which instrument do you prefer?</label>
+
+          <select name="instrument" id="dropdown">
+            <option disabled selected value>
+              Select your favorite instrument!
+            </option>
+            <optgroup label="String Instruments"></optgroup>
+            <option value="guitar">Guitar</option>
+            <option value="bass">Bass</option>
+            <optgroup label="Other Instruments"></optgroup>
+            <option value="drums">Drums</option>
+            <option value="voice">Voice</option>
+            <option value="keys">Keys</option>
+          </select>
+        </div>
+
+        <div class="groupForm">
+          <p>How often do you listen to music?</p>
+          <input
+            type="radio"
+            name="frequency"
+            value="always"
+            id="always"
+            checked
+          /><label for="always">Always</label>
+          <br />
+          <input type="radio" name="frequency" value="often" id="often" /><label
+            for="often"
+            >Often</label
+          >
+          <br />
+          <input
+            type="radio"
+            name="frequency"
+            value="ocasionally"
+            id="ocasionally"
+          /><label for="ocasionally">Ocasionally</label>
+          <br />
+
+          <input type="radio" name="frequency" value="never" id="never" /><label
+            for="never"
+            >Never</label
+          >
+        </div>
+        <div class="groupForm">
+          <p>Which genres you like?</p>
+          <input type="checkbox" value="grunge" id="grunge" /><label
+            for="grunge"
+            >Grunge</label
+          >
+          <br />
+          <input type="checkbox" value="hard-rock" id="hard-rock" /><label
+            for="hard-rock"
+            >Hard-Rock</label
+          >
+          <br />
+          <input type="checkbox" value="rock" id="rock" /><label for="rock"
+            >Rock</label
+          >
+          <br />
+          <input type="checkbox" value="blues" id="blues" /><label for="blues"
+            >Blues</label
+          >
+          <br />
+          <input type="checkbox" value="jazz" id="jazz" /><label for="jazz"
+            >Jazz</label
+          >
+          <br />
+          <input type="checkbox" value="pop" id="pop" /><label for="pop"
+            >Pop</label
+          >
+          <br />
+          <input type="checkbox" value="sould" id="soul" /><label for="soul"
+            >Soul</label
+          >
+        </div>
+
+        <div class="groupForm">
+          <p>Leave some comments or some information you like to add!</p>
+          <textarea name="textarea" id="text-area"></textarea>
+        </div>
+
+        <button type="submit" id="submit">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
